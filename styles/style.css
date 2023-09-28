@@ -1,0 +1,225 @@
+/************************************GENERAL*****************************************/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100vh;
+    min-width: 320px;
+}
+
+body {
+    min-height: 100%;
+    background-color: lightgrey;
+    font-family: monospace;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.wrap-params {
+    min-height: inherit;
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 10px;
+    background-image: url('../images/img-bg-light.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*************************************USERS*******************************************/
+.main-users-block {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-top: 50px;
+}
+
+.user-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex-basis: 45%;
+    height: 45px;
+    padding: 3px;
+    color: darkblue;
+    border: 2px groove;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px darkblue;
+}
+
+.user-block:hover {
+    border: 2px solid darkblue;
+    font-weight: bold;
+}
+
+.user-btn {
+    padding: 0 6px;
+    background: lightgrey;
+    font-size: 14px;
+    transition: all 300ms ease;
+    border: 2px outset darkgrey;
+    border-radius: 7px;
+    color: black;
+    cursor: pointer;
+    position: relative;
+    top: 12px;
+}
+
+.user-btn:hover {
+    background: #2e428d;
+    color: greenyellow;
+    min-width: 100px;
+}
+
+/******************************************DETAILS*************************************/
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main-data {
+    width: 100%;
+    height: 45%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 5px groove;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px darkblue;
+}
+
+
+.info-block {
+    min-height: 60px;
+    background-color: #d7ddd3;
+    flex-basis: 19%;
+    text-align: center;
+    font-weight: bold;
+    border: inset;
+    border-radius: 7px;
+    color: darkblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.post-title-block {
+    margin-top: 80px;
+    width: 100%;
+}
+
+.post-title-block .list {
+    padding-left: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-self: center;
+}
+
+.list li {
+    flex-basis: 48%;
+}
+
+.list li a {
+    margin-left: 5px;
+    padding: 0 6px;
+    font-size: 11px;
+    color: #10a3a3;
+    border: 1px solid;
+    border-radius: 7px;
+    transition: all 300ms ease;
+}
+
+.list li a:hover {
+    background: #2e428d;
+    color: greenyellow;
+}
+
+.post-btn {
+    width: 200px;
+    padding: 5px;
+    align-self: center;
+    background: lightgrey;
+    color: black;
+    cursor: pointer;
+    transition: all 300ms ease;
+    border: 3px outset;
+    border-radius: 15px;
+}
+
+.post-btn:hover {
+    background: #2e428d;
+    color: greenyellow;
+}
+
+/******************************************POSTS***************************************/
+
+.main-post-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.post-info {
+    min-height: 90vh;
+    max-width: 90%;
+    padding: 20px;
+    border: 2px groove;
+    border-radius: 30px 30px;
+    background-color: #e8eadf;
+    box-shadow: 10px 10px 15px darkblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.post-info p {
+    color: darkblue;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.post-info ul {
+    font-style: italic;
+    font-size: 13px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 7px;
+}
+
+.post-info ul::before {
+    content: 'Comments:';
+}
+
+span {
+    color: darkred;
+    font-size: 14px;
+    font-family: Roboto, sans-serif;
+}
+
+.post-info ul li {
+    padding: 5px;
+    border: groove;
+    border-radius: 5px;
+}
+
+.post-info ul li:first-letter {
+    text-transform: uppercase;
+}
+
+.post-info .email-style {
+    color: indigo;
+    font-family: cursive;
+    font-weight: bold;
+}
