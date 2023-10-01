@@ -13,7 +13,7 @@ const fetchPosts = async ()=>{
    return await response.json();
 }
 
-const renderUserAndPosts = async () => {
+const renderUserInfo = async () => {
     const user = await fetchUser();
     const mainDataBlock = document.getElementsByClassName('main-data')[0];
 
@@ -39,6 +39,7 @@ const renderUserAndPosts = async () => {
     const posts = await fetchPosts();
     const titles = document.getElementsByClassName('post-title-block')[0];
     const container = document.getElementsByClassName('container')[0];
+
     const list = document.createElement('ul');
     const btn = document.createElement('button');
 
@@ -68,4 +69,4 @@ const renderUserAndPosts = async () => {
     btn.addEventListener('click', showPostsTitles);
 }
 
-renderUserAndPosts();
+renderUserInfo();

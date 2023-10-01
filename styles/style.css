@@ -26,7 +26,6 @@ a {
     max-width: 1240px;
     margin: 0 auto;
     padding: 10px;
-    background-image: url('../images/img-bg-light.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -47,15 +46,17 @@ a {
     flex-basis: 45%;
     height: 45px;
     padding: 3px;
-    color: darkblue;
+    color: darkred;
     border: 2px groove;
     border-radius: 15px;
-    box-shadow: 5px 5px 5px darkblue;
+    box-shadow: 5px 5px 5px darkred;
 }
 
 .user-block:hover {
-    border: 2px solid darkblue;
+    border: 2px solid darkgreen;
+    box-shadow: 5px 5px 5px darkgreen;
     font-weight: bold;
+    color: #235819;
 }
 
 .user-btn {
@@ -72,9 +73,10 @@ a {
 }
 
 .user-btn:hover {
-    background: #2e428d;
+    background: #1e5714;
     color: greenyellow;
     min-width: 100px;
+    transform: scale(1.2, 1.2);
 }
 
 /******************************************DETAILS*************************************/
@@ -93,7 +95,7 @@ a {
     flex-wrap: wrap;
     border: 5px groove;
     border-radius: 15px;
-    box-shadow: 5px 5px 10px darkblue;
+    box-shadow: 5px 5px 10px darkred;
 }
 
 
@@ -105,7 +107,7 @@ a {
     font-weight: bold;
     border: inset;
     border-radius: 7px;
-    color: darkblue;
+    color: darkred;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -132,14 +134,14 @@ a {
     margin-left: 5px;
     padding: 0 6px;
     font-size: 11px;
-    color: #10a3a3;
+    color: #8d3c2e;
     border: 1px solid;
     border-radius: 7px;
     transition: all 300ms ease;
 }
 
 .list li a:hover {
-    background: #2e428d;
+    background: #1e5714;
     color: greenyellow;
 }
 
@@ -156,7 +158,7 @@ a {
 }
 
 .post-btn:hover {
-    background: #2e428d;
+    background: #1e5714;
     color: greenyellow;
 }
 
@@ -175,7 +177,7 @@ a {
     border: 2px groove;
     border-radius: 30px 30px;
     background-color: #e8eadf;
-    box-shadow: 10px 10px 15px darkblue;
+    box-shadow: 10px 10px 15px darkred;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -183,9 +185,9 @@ a {
 }
 
 .post-info p {
-    color: darkblue;
+    color: darkred;
     font-weight: bold;
-    margin-bottom: 40px;
+    margin: 20px 0 40px;
 }
 
 .post-info ul {
